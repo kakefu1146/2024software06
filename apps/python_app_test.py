@@ -42,6 +42,7 @@ def load_tests(loader, tests, pattern):
             continue
         processed.add(l)
         print('Discovering python tests from: {}'.format(l))
+        ptint("Hello World!")
         sys_path_modify = l not in sys.path
         if sys_path_modify:
             sys.path.append(l)  # Hack python loader
